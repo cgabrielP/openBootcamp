@@ -10,9 +10,9 @@ class Juguete:
         return self._encendido
 
 class ps5(Juguete):
-    def __init__(self, nombre) :
+    def __init__(self, nombre,color) :
         super().__init__()
-        self.color="blanco"
+        self.color=color
         self.nombre=nombre
         print("estoy en ps5")
     
@@ -22,6 +22,6 @@ class ps5(Juguete):
         else:
             print("control ya conectado")
 
-p=ps5('carlos')
+p=ps5('carlos',"verde")
 print(p.color)
 print(p.nombre)
